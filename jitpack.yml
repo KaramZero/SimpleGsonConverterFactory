@@ -1,0 +1,19 @@
+version: 2.0
+jdk:
+  - openjdk11  # You can specify the JDK version here, JitPack supports several versions
+
+before_install:
+  - echo "This is where you can run any custom commands before installation"
+
+install:
+  - ./gradlew clean build  # Run the build command for your Android project to generate the AAR
+
+build:
+  commands:
+    - ./gradlew assembleRelease  # This will build the release version of your project (can be debug if you prefer)
+    - ./gradlew publishToMavenLocal  # Optionally, publish it to your local Maven repo first (for testing)
+  
+deploy:
+  - name: Upload to JitPack
+    commands:
+      - ./gradlew publish  # If using Maven Publish plugin, upload to JitPack
