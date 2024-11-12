@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.KaramZero</groupId>  <!-- Replace with your groupId -->
+    <artifactId>simplegsonconverterfactory</artifactId>  <!-- Replace with your artifactId -->
+    <version>1.2.2</version>  <!-- Replace with your version -->
+    <packaging>aar</packaging>
+
+    <dependencies>
+        <!-- Add your library dependencies here if any -->
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </distributionManagement>
+</project>
