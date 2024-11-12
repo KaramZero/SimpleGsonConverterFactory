@@ -1,0 +1,19 @@
+plugins {
+    id 'maven-publish'
+}
+
+group = 'com.github.karamzeroo' // Your GitHub username
+version = '1.2.2' // Replace with your desired version
+
+publishing {
+    publications {
+        aar(MavenPublication) {
+            groupId = group
+            artifactId = 'simplegsonconverterfactory' // Replace with your library name
+            version = version
+
+            // Publish the AAR file
+            artifact file('libs/simplegsonconverterfactory-1.2.2.aar')
+        }
+    }
+}
